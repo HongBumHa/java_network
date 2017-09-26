@@ -18,7 +18,7 @@ public class ParseURL {
 				System.out.printf("protocal : %s%n",opinion.getProtocol());
 				System.out.printf("host : %s%n",opinion.getHost());
 				System.out.printf("port : %s%n",opinion.getPort());
-				System.out.printf("path : %s%n",opinion.getPort());
+				System.out.printf("path : %s%n",opinion.getPath());
 				System.out.printf("filename : %s%n",opinion.getFile());
 				
 				BufferedReader br = new BufferedReader(
@@ -31,11 +31,9 @@ public class ParseURL {
 				br.close();
 			} catch (MalformedURLException e) {
 				System.err.println("잘못된 URL주소입니다.");
-				e.printStackTrace();
-				
+				e.printStackTrace();			
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
 	}
-
 }
