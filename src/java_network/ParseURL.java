@@ -12,7 +12,6 @@ public class ParseURL {
 		URL opinion = null;
 		URL homePage = null;
 //		http://dgit.or.kr/SUB/?ctId=2
-
 			try {
 				homePage = new URL("http://www.dgit.or.kr");
 				opinion = new URL(homePage, "SUB/?ctId=2");
@@ -37,8 +36,6 @@ public class ParseURL {
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
-
-
 	}
 
 }
